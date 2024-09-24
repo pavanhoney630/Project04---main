@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+body{
+    width: 100%;
+    height: 200vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #333;
+    box-sizing: border-box;
+    padding: 2rem 2rem;
+}  
+.container{
+    height: 70vh;
+    width: 48%;
+    background: #8CC461;
+    margin: 2rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative; 
+    padding: 4rem 4rem; 
+}
+.head{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    text-align: top;
+    left: 1.0rem;
+    bottom: 1.2rem;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    padding: 0;
+    margin-top: -2.5rem;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    color: #fff;
+    padding-left: 1rem;
+    margin-right: 7.5rem;
+    margin-left: 1.0rem;
+    margin-top: 0.8rem;
+}
+.text1{
+    height: 12vh;
+    width: 80%;
+    margin-left: -1rem;
+    border-radius: 7px;
+    margin-top: 1.2rem;
+    color: #555;
+    position: relative;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    padding-left: 0.6rem;
+    font-size: x-small;
+}
+.text2{
+    height: 12vh;
+    width: 85%;
+    margin-left: -3rem;
+    border-radius: 7px;
+    margin-top: 1.2rem;
+    color: #555;
+    position: relative;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    padding-left: 1.0rem;
+    font-size: x-small;
+}
+.text1,.text2{
+    margin-left: 1rem;
+}
+.zero{
+   color: black;
+   font-size: x-large;
+   margin-left: 1.7rem;
+   position: absolute;
+   margin-top: -2.5rem; 
+   font-weight: 600;
+}
+#text1-2,#text2-2{
+    width: 45%;
+    text-align: center;
+   
+}
+#text1-2{
+    margin-left: 3rem;
+}
+#text2-2{
+    margin-left:-1rem;
+    width: 40%;   
+}
+#zero1-2{
+    left: 3rem;
+    position: relative;
+}
+#zero2-2{
+    position: relative;
+    right: 0.7rem ;
+}
+
+.winner-count{
+    margin-left: 1.0rem !important;
+    position: relative;  
+}
+.choices{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;    
+}
+#box1,#box2,#box3{
+    position: relative;
+    margin-left: -10rem;
+      
+}
+#box1{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: 10px solid #0074B6;     
+}
+#box2{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: 10px solid #BD00FF;
+    margin-left: 5px;  
+}
+#box3{
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: 10px solid #FFA943;
+    margin-top: 125px;
+    margin-left: -160px;
+}
+#fist,#vshape, #hand{
+    height: 40px;
+    width: 40px;
+    margin-top: 7rem;
+    vertical-align: top;
+    margin-left: -1.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;  
+}
+#fist{
+    top: -21.5rem;
+    align-items: end;
+    margin-left: 9px;
+    right: -4.8rem;
+}
+#vshape{
+ top: -21.5rem;
+ right:-14.0rem;
+}
+#hand{
+    top: -13.4rem;
+    right: -8.0rem;;
+}
+ #straight,#backward,#forward{
+   position: relative;
+   display: flex;
+   align-items: center;
+   
+}
+#straight{
+    height: 9px;
+    width: 115px;
+    right: -2.0rem;
+    top: 1.8rem;
+    border-radius: 2px;
+}
+#backward{
+    height: 38px;
+    width: 110px;
+    right: 1.0rem;
+    top: 5.0rem;
+    border-radius: 18px;
+    transform: rotate(25deg);
+}
+#forward{
+    height: 38px;
+    width: 110px;
+    right: -4.4rem;
+    top: 2.7rem;
+    border-radius: 18px;
+    transform: rotate(-30deg);
+}
+#btn{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 23rem;
+    margin-top: -15rem;
+    position: absolute;
+    background-color: #8CC461;
+    border: 2px solid #fff;
+}
+#Rulepage{
+    height: 170px;
+    width: 130px;
+    position: relative;
+    display: none;
+    margin-left: 24rem;
+    margin-top: -20.7rem;
+    transform: translate(-50%, -50%);
+}
+#cross{
+    margin-left: 27.3rem;
+    margin-top: -16.5rem;
+    font-weight: bold;
+    color: white;
+    float: right;
+    cursor: pointer;
+    border-radius: 100%;
+    background: red;
+    border: 2px solid #fff;
+    position: absolute;
+    display: none;
+}
+.container2{
+    height: 70vh;
+    width: 55%;
+    background: #8CC461;
+    margin-left: 3.0rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative; 
+    padding: 2rem 4rem; 
+}
+.container,.container2{
+    margin-top: 50px;
+}
+#middle-head{
+    margin-top: -0.7rem;
+}
+.player-choice{
+    position: absolute;
+    margin-top: 2.5rem;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: 10px solid #BD00FF;
+    margin-left: -1rem;
+}
+.computer-choice{
+    position: absolute;
+    margin-left: 22rem;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: 10px solid #FFA943;
+    margin-top: 2.5rem;  
+}
+.player-choice,.computer-choice{
+    color: transparent;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px; 
+}
+.winner {
+    animation: circleWave 2s infinite;
+}
+
+@keyframes circleWave {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.btn2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 21.0rem;
+    margin-top: 13.5rem;
+    position: absolute;
+    background-color: #8CC461;
+    border: 2px solid #fff;
+}
+#next{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height: 30px;
+    width: 90px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 27.0rem;
+    margin-top: 13.5rem;
+    position: absolute;
+    background-color: #8CC461;
+    border: 2px solid #fff;
+}
+.win-show{
+    position: absolute;
+    margin-left: 9.5rem;
+    margin-top: 0.5rem;
+    padding: 0px;
+}
+#win-msg1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    font-size: x-large;
+}
+#win-msg2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: larger;
+    margin-top: -1rem;
+}
+#playagain{
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0.5em 2em;
+    margin-left: -1.0rem;
+    color: #555;
+    font-weight: 600;
+    margin-top: -1rem;
+    border: none;
+    height: 2.2rem;
+}
+.flex{
+    display: flex;
+    
+}
+.container3{
+    width: 55%;
+    background: #8CC461;
+    margin-top: 3.2rem;
+    box-sizing: border-box;
+    position: relative; 
+    margin-left: 3.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+.container,.container3{
+    margin-left: 3rem;
+}
+#cup-image{
+  margin-left: -51rem;
+  margin-top: 10rem;
+  height: 20vh;
+  position: absolute;
+  z-index: 1; 
+}
+#win-emotion, #victory-msg, #playagain2 {
+    position: absolute;
+    z-index: -2;
+    margin-top: 3rem;
+}
+.animate-cup{
+    animation: moveUp 2s forwards; 
+    right: 18rem;
+    top: -3rem;
+    position: absolute;
+    transform: translate(-65%, 66%);
+    z-index: 1;
+}
+.fall-cup{
+    animation: moveDown 2s forwards;
+    right: 18rem;
+    top: 3rem;
+    position: absolute;
+}
+#star-image{
+    height: 20vh;
+    margin-left:-7.9rem;
+    margin-top:7rem;
+    position: absolute;
+    animation: starsAnimation 2s infinite;
+}
+#playagain2{
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0.5em 2em;
+    left: 14rem;
+    color: #555;
+    font-weight: 600;
+    top: 22rem;
+    border: none;
+    height: 2.2rem;
+    z-index: 2;
+    position: absolute;      
+}
+#win-emotion{
+    top: 18rem;
+    left:2rem;
+    letter-spacing: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+    color: #fff;
+    position:absolute;
+}
+#victory-msg{
+    left: -2.1rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    top: 18rem;
+    display: block;
+    position: absolute;  
+}
+@keyframes moveUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+@keyframes starsAnimation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+#win-emotion, #victory-msg {
+    position: relative;
+    z-index: 2;
+  margin-top: 20px;
+}

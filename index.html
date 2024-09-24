@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div class="container" id="container1">
+    <div class="head">
+           <h1>Rock<br>
+            Paper<br>
+            Scissors</h1>
+            <div>           
+                 <P class="text1">computer<br>
+                                 score</P>
+             <h1 class="zero" id="player1">0</h1>
+             </div>
+             <div>
+               <p class="text2"> Your<br>
+                                score</p>
+             <h1 class="zero" id="player2">0</h1>
+         </div>
+    </div>
+    <div class="choices">
+        <div>
+            <span><img src="./straight.png" id="straight"/></span>
+            <span><img src="./backward.png" id="backward"/></span>
+            <span><img src="./forward.png" id="forward"/></span>
+        </div>
+        <span ><input type="text" readonly style="border-radius: 100%;" id="box1" class="user-selection"></span>
+        <span ><input type="text" readonly style="border-radius: 100%;" id="box2" class="user-selection"></span>
+        <span ><input type="text" readonly style="border-radius: 100%;" id="box3" class="user-selection"></span>
+        </div>
+        <div>
+           <span> <img src="./rock.png" id="fist" class="user-selection" onclick="playGame('rock')"></span>
+           <span> <img src="./scissors.png" id="vshape" class="user-selection" onclick="playGame('scissors')"></span>
+            <span><img src="./paper.png" id="hand" class="user-selection" onclick="playGame('paper')"></span>
+        </div>
+        <button id="btn">RULES</button>
+        <div>
+            <image src="./Rule page.png" id="Rulepage" class="hidden">
+            <span><button id="cross">x</button></span>
+        </div>
+    </div>
+  </div>
+  <div class="flex">
+<div class="container2" id="container2">
+    <div class="head" id="middle-head">
+        <h1>Rock<br>
+         Paper<br>
+         Scissors</h1>
+         <div>           
+              <P class="text1" id="text1-2">computer<br>
+                              score</P>
+          <h1  id="zero1-2"class="winner-count zero">0</h1>
+          </div>
+          <div>
+            <p class="text2" id="text2-2"> Your<br>
+                             score</p>
+          <h1  id="zero2-2"class="winner-count zero ">0</h1>
+      </div>
+ </div>
+        <div>
+            <span><input type="text" readonly style="border-radius: 100%;" class="computer-choice winner" id="computerChoice"></span>
+                    <span class="win-show"><p id="win-msg1">YOU WIN</p>
+                   <p id="win-msg2">AGAINST PC</p>
+                   <button id="playagain">PLAY AGAIN</button></span>
+            <span><input type="text" readonly style="border-radius: 100%;" class="player-choice winner" id="playerChoice"></span>
+        </div>
+        <button  class="btn2">RULES</button>
+        <button id="next">NEXT</button>
+ </div>
+    <div class="container3">
+     <div>
+        <img src="./victory-cup.png" id="cup-image">
+       <img src="./stars.png" id="star-image">
+    </div>
+    <div>
+        <h1 id="win-emotion" class="win-emotion">HURRAY!!</h1>
+        <p id="victory-msg" class="winmsg">YOU WON THE GAME</p>
+        <button id="playagain2" class="Play-again">PLAY AGAIN</button>
+    </div>
+
+   </div>
+</div>
+    <script src="./script.js">
+         
+    </script>
+</body>
+</html>
